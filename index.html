@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>FINIT</title>
+
+<!-- Stylesheets -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+<link rel="icon" href="images/icon.png" type="image/x-icon">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Responsive -->
+<meta name="google-site-verification" content="FDlFnQO1dR8Y0yHyDkpwl-oTbRiowgZJ6jSHiqvEiw0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="naver-site-verification" content="146d25950660a3173284c7227d242fb510644a04"/>
+<meta name="description" content="피니트는 파워맵과 힌트플러스를 증권회사 HTS에서 운영하 있으며, 실시간 수급 정보를 제공합니다">
+<meta property="og:type" content="website">
+<meta property="og:title" content="피니트">
+<meta property="og:description" content="피니트는 파워맵과 힌트플러스를 증권회사 HTS에서 운영하 있으며, 실시간 수급 정보를 제공합니다">
+<meta property="og:image" content="http://finit.co.kr/images/logo.png">
+<meta property="og:url" content="http://finit.co.kr/">
+<style media="screen">
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+.container1 {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+.container1::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -12px;
+  background-color: white;
+  border: 4px solid #3295ed;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.left1 {
+  left: 0;
+}
+.right1 {
+  left: 50%;
+}
+.left1::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+.right1::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+.right1::after {
+  left: -12px;
+}
+.content1 {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline::after {
+  left: 31px;
+  }
+  .container1 {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  .container1::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  .left1::after, .right1::after {
+    left: 15px;
+  }
+  .right1 {
+    left: 0%;
+  }
+}
+</style>
+</head>
+<body style="background:linear-gradient(135deg, #163855,#235b89,#163855);">
+  <script>
+    AOS.init();
+  </script>
+
+    <div class="page-wrapper">
+      <div class="preloader"></div>
+        <!-- 네비게이션바 시작 -->
+        <header class="main-header">
+          <div class="header-upper">
+        	   <div class="auto-container">
+            	<div class="clearfix">
+                <div class="pull-left logo-box">
+                  <div class="logo"><a href="index.html"><img src="images/background/finitlogo.png" style="width:128px; height:30px;" alt="" title=""></a></div>
+                </div>
+                  <div class="nav-outer clearfix">
+						        <nav class="main-menu navbar-expand-md">
+							       <div class="navbar-header">
+								      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+									     <span class="icon-bar"></span>
+									     <span class="icon-bar"></span>
+									     <span class="icon-bar"></span>
+								      </button>
+							       </div>
+							      <div class="navbar-collapse collapse scroll-nav clearfix" id="navbarSupportedContent">
+								     <ul class="navigation clearfix">
+                      <li><a href="#home">Home</a></li>
+    									<li class="dropdown"><a href="#">Solution</a>
+  										 <ul>
+  											<li><a href="#powermapus">Powermap US</a></li>
+  											<li><a href="#powermap">Powermap</a></li>
+  										</ul>
+    								 </li>
+  									  <li><a href="#about">About</a></li>
+                      <li><a href="#partners">Partners</a></li>
+                      <li><a href="contact.html">Contact us</a></li>
+      							 </ul>
+      							</div>
+						       </nav>
+        					</div>
+                </div>
+              </div>
+            </div>
+          </header>
+          <!-- 네비게이션바 끝 -->
+
+      <!-- 메인페이지 시작 -->
+    <section  id="home">
+      <br><br><br><br>
+		<div class="auto-container">
+			<div class="content" style="margin-top:350px; margin-bottom:400px; text-align:right;">
+        <img src="images/background/finitlogo.png" alt="" style="width:50%;">
+				<div class="text" style="color:white;">Combining Finance with Technology <br>to Deliver Innovative Financial Solutions</div>
+			</div>
+		</div>
+	</section>
+  <!-- 메인페이지 끝 -->
+  <!-- 파워맵us시작 -->
+	<section class="" id="powermapus" data-aos="fade-up" data-aos-duration="2000" >
+    <br><br><br><br>
+		<div class="auto-container">
+			<div class="sec-title centered">
+				<h2 style="color:white; margin-top: 50px;">PowerMap US</h2>
+				<div class="separater"></div>
+				<div class="text" style="color:white;">For real-time flow analysis, PowerMap US utilizes AI technology to extract
+        benchmark transactions that are closely related to the stock price moves in the market.
+        Based on the transaction, it performs feature analysis to derive the volume flow analysis results.
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <img src="images/us-img-1.png" style="width: 70%; height: auto;" alt="">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h4 style="color:white;" data-aos="fade-up" data-aos-duration="2000">Two main features</h4>
+        <div class="row" >
+        <br>
+          <div class="w3-col w3-container m6" data-aos="fade-right" data-aos-duration="2000">
+            <img src="images/us-img-2-1.png" alt="" style="margin-top:32px;">
+            <br><br>
+        </div>
+        <div class="w3-col w3-container m6" data-aos="fade-left" data-aos-duration="2000">
+        <img src="images/us-img-2-2.png" alt="" style="margin-top:32px;">
+        <br><br>
+        </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h4 style="color:white;" data-aos="fade-up" data-aos-duration="2000">PowerMap US provides information for constructing optimal trading strategies</h4>
+        <div class="row" >
+        <br>
+        <div class="w3-col w3-container m6" data-aos="fade-right" data-aos-duration="2000">
+        <img src="images/amzn_flowchart.jpg" alt="" style="margin-top:32px; height: 75%;">
+            <div class="text" style="color:white;">
+              AMZN Intraday Flow Chart(MAR 16th, 2023)
+            </div>
+        <br><br>
+        </div>
+
+          <div class="w3-col w3-container m6 hi" data-aos="fade-left" data-aos-duration="2000">
+          <img src="images/nflx_flowchart.jpg" alt="" style="margin-top:32px; height: 75%;">
+          <div class="text" style="color:white;">
+            NFLX Intraday Flow Chart(MAR 16th, 2023)
+          </div>
+        <br><br>
+        </div>
+        </div>
+      			</div>
+      		</div>
+      	</section>
+        <!-- 파워맵us끝 -->
+        <!-- 파워맵시작 -->
+      <section id="powermap" data-aos="fade-up" data-aos-duration="2000">
+          <br><br><br><br>
+          <div class="auto-container" style="text-align:center; color:white;">
+        	   <div class="sec-title centered">
+            <h2 style="color:white;  margin-top: 50px;">PowerMap</h2>
+            <div class="separater"></div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3>Volume Flow Analysis Target</h3>
+        <div class="row" >
+          <br>
+          <div class="w3-col w3-container m4">
+            <img src="images/us-icon-4.png" alt="" style="margin-top:32px;">
+        <br>
+        <br>
+          <div class="text" style="color:white;">
+            Foreign Accounts
+          </div>
+        </div>
+      <div class="w3-col w3-container m4">
+        <img src="images/us-icon-5.png" alt="" style="margin-top:32px;">
+        <br><br>
+        <div class="text" style="color:white;">
+          Institutions
+        </div>
+      </div>
+      <div class="w3-col w3-container m4">
+        <img src="images/us-icon-6.png" alt="" style="margin-top:32px;">
+        <br><br>
+        <div class="text" style="color:white;">
+          Retails
+        </div>
+      </div>
+    </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h3>Features</h3>
+      <div class="row" >
+      <br>
+        <div class="w3-col w3-container m4">
+          <img src="images/us-icon-7.png" alt="" style="margin-top:32px;">
+        <br>
+        <br>
+          <div class="text" style="color:white;">
+            Tracking foreign account <br>and institution flows <br>through deep learning
+          </div>
+        </div>
+      <div class="w3-col w3-container m4">
+        <img src="images/us-icon-8.png" alt="" style="margin-top:32px;">
+        <br>
+        <br>
+        <div class="text" style="color:white;">
+          Calculation and <br>
+          simulation of weights <br>
+          for enhancing accuracy
+        </div>
+      </div>
+        <div class="w3-col w3-container m4">
+          <img src="images/us-icon-9.png" alt="" style="margin-top:32px;">
+        <br>
+        <br>
+          <div class="text" style="color:white;">
+            Provides real-time <br>
+            market indicators
+          </div>
+        </div>
+      </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3>PowerMap Technical Background</h3>
+        <div class="row" >
+          <br>
+          <div class="w3-col w3-container m4">
+            <img src="images/us-icon-1.png" alt="" style="margin-top:32px;">
+          <br>
+          <br>
+          <div class="text" style="color:white;">
+            Foreign accounts and <br>
+            institutions trade flow <br>
+            analysis model
+          </div>
+          <div class="text" style="color:white; ">
+            Utilizes deep learning <br>
+            technology based on historical <br>
+            market data.
+
+          </div>
+        </div>
+
+        <div class="w3-col w3-container m4">
+          <img src="images/us-icon-2.png" alt="" style="margin-top:32px;">
+        <br>
+          <div class="text" style="color:white;">
+            Foreign account net buying <br>
+            Institution net buying <br>
+            Mass transaction Flow Score
+          </div>
+          <div class="text" style="color:white; ">
+            Builds an initial analysis model and <br>
+            refines the accuracy with data- <br>
+            specific weighting and simulation.
+          </div>
+        </div>
+      <div class="w3-col w3-container m4">
+        <img src="images/us-icon-3.png" alt="" style="margin-top:32px;">
+      <br>
+      <br>
+          <div class="text" style="color:white;">
+            Real-time market <br>
+            indicators and <br>
+            transaction data
+          </div>
+          <div class="text" style="color:white; ">
+            Estimates trading trends in <br>
+            real time by applying current <br>
+            market data into the model.
+          </div>
+        </div>
+      </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="" data-aos="fade-up" data-aos-duration="2000">
+          <h3>Who We are</h3>
+          <div class="text" style="color:white; ">
+            We are a fintech start-up company with mission of enhancing investing activities.<br>
+            A proprietary solution of FINIT, PowerMap provides investors with a core trading solution.<br>
+            PowerMap has been providing its service for years and now it is increasingly becoming a core trading solution for local retail investors in Korea.
+          </div>
+        </div>
+          <br>
+          <br>
+          <div class="row" >
+            <br>
+            <div class="w3-col w3-container m6">
+              <img src="images/us-img-5-1.png" alt="" style="margin-top:32px;width:60%;" data-aos="fade-right" data-aos-duration="2000">
+            <br>
+            <br>
+            </div>
+            <div class="w3-col w3-container m6">
+              <img src="images/us-img-5-2_1.png" alt="" style="margin-top:32px; width:60%;" data-aos="fade-left" data-aos-duration="2000">
+            <br>
+            <br>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+    </section>
+    <!-- 파워맵끝 -->
+    <!-- 타임라인시작 -->
+    <section class="" id="about" data-aos="fade-up" data-aos-duration="2000">
+        <br>
+        <br>
+        <br>
+        <br>
+		      <div class="auto-container">
+            <div class="sec-title centered">
+              <h2 style="color:white;  margin-top: 50px; ">About</h2>
+              <div class="separater"></div>
+            </div>
+            <div style="box-sizing:border-box;">
+              <div class="timeline">
+                <div class="container1 left1" data-aos="fade-right" data-aos-duration="2000">
+                  <div class="content1">
+                    <h2>2019</h2>
+                    <p>
+                      2019.01 Established FINIT <br>
+                      2019.04 Lanched PowerMap <br>
+                      2019.07 Partnership with eBest Investment & Securities <br>
+                      2019.12 Partnership with Shinhan Securities
+                    </p>
+                  </div>
+                </div>
+                <div class="container1 right1" data-aos="fade-left" data-aos-duration="2000">
+                  <div class="content1">
+                    <h2>2020</h2>
+                    <p>
+                      2020.03 Partnership with Mirae Asset Securities<br>
+                      2020.04 Partnership with KB Securities <br>
+                      2020.09 Partnership with KIWOOM Securities
+                    </p>
+                  </div>
+                </div>
+                <div class="container1 left1" data-aos="fade-right" data-aos-duration="2000">
+                  <div class="content1">
+                    <h2>2021</h2>
+                    <p>
+                    2021.02 Partnership with DAOL Investment & Securities<br>
+                    2021.10 Partnership with NH Investment & Securities
+                    </p>
+                  </div>
+                </div>
+                <div class="container1 right1" data-aos="fade-left" data-aos-duration="2000">
+                  <div class="content1">
+                    <h2>2022</h2>
+                    <p>
+                      2022.10 Developed PowerMap US
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            </div>
+        </section>
+        <!-- 타임라인끝 -->
+        <!-- 파트너스시작 -->
+        <section class="testimonial-section" id="partners" data-aos="fade-up" data-aos-duration="2000">
+          <br>
+          <br>
+          <br>
+          <br>
+		        <div class="auto-container">
+			           <div class="sec-title centered">
+				               <h2 style="color:white;">Partners</h2>
+				                   <div class="separater"></div>
+				                       <div class="text" style="color:white;">
+                                 Our solution is implemented by most major securities companies in Korea.
+                               </div>
+			                          </div>
+			                             <div class="carousel-outer">
+                                    <ul class="sponsors-carousel owl-carousel owl-theme">
+                                        <li><div class="image-box"><a href="https://www.hanaw.com/main/main/index.cmd"><img src="images/us-partner-5.png"  alt=""></a></div></li>
+                                        <li><div class="image-box"><a href="https://www.ebestsec.co.kr"><img src="images/us-partner-7.png"  alt=""></a></div></li>
+                                        <li><div class="image-box"><a href="https://www.miraeassetdaewoo.com/"><img src="images/us-partner-4.png" alt=""></a></div></li>
+                                        <li><div class="image-box"><a href="https://www.sks.co.kr/"><img src="images/us-partner-2.png" style="height:120px;" alt=""></a></div></li>
+                                        <li><div class="image-box"><a href="https://www.kiwoom.com"><img src="images/us-partner-3.png" style="height:180px;" alt=""></a></div></li>
+                                        <li><div class="image-box"><a href="https://www.shinhaninvest.com"><img src="images/us-partner-1.png" "  alt=""></a></div></li>
+                                        <li><div class="image-box"><a href="https://www.nhqv.com/"><img src="images/us-partner-6.png" " alt=""></a></div></li>
+                                    </ul>
+                                  </div>
+		                             </div>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+            </section>
+            <!-- 파트너스끝 -->
+            <!-- footer 시작 -->
+            <footer class="main-footer">
+		          <div class="auto-container">
+                <div class="widgets-section">
+                	<div class="row clearfix">
+                    <div class="big-column col-lg-7 col-md-12 col-sm-12">
+						                <div class="row clearfix">
+                              <div class="footer-column col-lg-12 col-md-12 col-sm-12">
+                                <div class="footer-widget awesome-widget">
+                                  <h2 style="color:white">.</h2>
+                                  <div class="text">Combining Finance with Technology to Deliver Innovative Financial Solutions</div>
+                                </div>
+                              </div>
+						                 </div>
+					            </div>
+                    <div class="big-column col-lg-5 col-md-12 col-sm-12">
+						               <div class="row clearfix">
+                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                            <div class="footer-widget links-widget">
+									                     <h2>Company</h2>
+                                       <div class="text">
+                                         Two IFC<br>
+                                         10, Gukjegeumyung-ro, Yeongdeungpo-gu<br> Seoul, Korea (07326)<br/> Tel. +82-2-322-2222 <br/>Fax. +82-2-322-2278
+                                      </div>
+								             </div>
+							              </div>
+                          <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                            <div class="footer-widget social-widget">
+									                     <h2>Follow Us</h2>
+									          <ul class="footer-social-links">
+                              <li><a href="https://www.youtube.com/channel/UCvW7IwAS0Y6dKOGkps3IX_g"><span class="icon fa fa-youtube"></span>Youtube</a></li>
+									          </ul>
+								            </div>
+							             </div>
+						              </div>
+					            </div>
+				             </div>
+			              </div>
+              			<div class="footer-bottom">
+              				<div class="row clearfix">
+
+              						</form>
+              					</div>
+              					<div class="copyright-column col-lg-7 col-md-6 col-sm-12">
+              						<div class="copyright">Copyright &copy; 2019, <a target="_blank" >FINIT</a></div>
+              					</div>
+              				</div>
+              			</div>
+		                </div>
+	                 </footer>
+                   <!-- Footer 끝 -->
+                 </div>
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-double-up"></span></div>
+<script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/pagenav.js"></script>
+<script src="js/jquery.scrollTo.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
